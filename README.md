@@ -12,16 +12,17 @@ Users should be able to:
 
 ## Links
 
-<!-- - [Code](https://github.com/brankobozo/age-calculator-app)
+- [Code](https://brankobozo.github.io/advice-generator-app/)
 - [live](https://brankobozo.github.io/age-calculator-app/)
 
 ## Tools
 
 - Semantic HTML5 markup
 - CSS Custom properties
-- VanillaJS Dates
+- JS fetch
+- JSON api
 
 ## Screenshots
 
 ![picture alt](images/screenshots/mobile.png "Advice generator app mobile screenshot")
-![picture alt](images/screenshots/desktop.png "Advice generator app desktop screenshot") -->
+![picture alt](images/screenshots/desktop.png "Advice generator app desktop screenshot")
