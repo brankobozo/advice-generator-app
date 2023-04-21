@@ -3,40 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Advice generator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="main.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
+    <main class="app">
+      <p class="advice__num">Advice #<span class="num"></span></p>
+      <p class="advice__text"></p>
+      <picture>
+        <source
+          media="(min-width:720px)"
+          srcset="images/pattern-divider-desktop.svg"
+        />
+        <img
+          src="images/pattern-divider-mobile.svg"
+          alt="Divider for styling purpose"
+          class="advice__divider"
+        />
+      </picture>
 
-    "<!-- Advice text goes here -->"
+      <button class="advice__btn">
+        <img src="images/icon-dice.svg" alt="Click for advice" width="24" />
+      </button>
+    </main>
 
-    <footer class="attribution">
+    <!-- <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/brankobozo">branko boz</a>.
-    </footer>
+    </footer> -->
   </body>
 </html>

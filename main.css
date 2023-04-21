@@ -1,32 +1,107 @@
-/* # Front-end Style Guide
+/* ### Body Copy
 
-## Layout
+- Font size (quote): 28px */
 
-The designs were created to the following widths:
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
-- Mobile: 375px
-- Desktop: 1440px
+/* min css reset and variables
+============================= */
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  --main-color: hsl(193, 38%, 86%);
+  --secondary-color: hsl(150, 100%, 66%);
 
-## Colors
+  --main-bg: hsl(218, 23%, 16%);
+  --secondary-bg: hsl(217, 19%, 24%);
+  --grayish-blue: hsl(217, 19%, 38%);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img {
+  vertical-align: middle;
+}
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
 
-### Primary
+/* base
+============================= */
+body {
+  display: grid;
+  grid-template-rows: auto;
+  place-content: center;
+  min-height: 100vh;
+  /* padding-block-start: 3em; */
+  background-color: var(--main-bg);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
 
-- Light Cyan: hsl(193, 38%, 86%)
-- Neon Green: hsl(150, 100%, 66%)
+/* app
+============================= */
+.app {
+  background-color: var(--secondary-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 1.6em 4em;
+  border-radius: 0.8em;
+  max-width: 343px;
+  text-align: center;
+  position: relative;
+}
+.advice__num {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.advice__text {
+  padding-block: 1.15em 0.8em;
+  color: var(--main-color);
+  font-size: 1.4rem;
+}
+.advice__btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: -32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.advice__btn:hover {
+  box-shadow: 0 0 20px 5px var(--secondary-color);
+}
+/* attribution
+============================= */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--main-color);
+}
+.attribution a {
+  color: var(--secondary-color);
+}
 
-### Neutral
-
-- Grayish Blue: hsl(217, 19%, 38%)
-- Dark Grayish Blue: hsl(217, 19%, 24%)
-- Dark Blue: hsl(218, 23%, 16%)
-
-## Typography
-
-### Body Copy
-
-- Font size (quote): 28px
-
-### Font
-
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 800 */
+@media (min-width: 720px) {
+  .app {
+    max-width: 540px;
+    padding: 3.25em 3em 4.5em;
+  }
+  .advice__text {
+    padding-bottom: 1.35em;
+    font-size: 1.75rem;
+  }
+  .advice__btn:hover {
+    box-shadow: 0 0 30px 10px var(--secondary-color);
+  }
+}
