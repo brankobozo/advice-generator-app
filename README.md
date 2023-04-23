@@ -24,5 +24,5 @@ Users should be able to:
 
 ## Screenshots
 
-![picture alt](images/screenshots/mobile.png "Advice generator app mobile screenshot")
-![picture alt](images/screenshots/desktop.png "Advice generator app desktop screenshot")
+![picture alt](images/screenshots/mobile.jpg "Advice generator app mobile screenshot")
+![picture alt](images/screenshots/desktop.jpg "Advice generator app desktop screenshot")
